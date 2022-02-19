@@ -1,24 +1,29 @@
 {
-    "manifest_version": 2,
-    "name": "Slider Game",
-    "description": "This extension will turn your webpage into a slider game",
-    "version": "1.0",
-  
-    "background": {
-        "scripts": ["game.js"],
-        "persistent": false
-    },
-    "browser_action": {
-        "default_icon": "get_started16.png",
-        "default_title": "" 
-    },
-    "icons": {
-        "16": "images/get_started16.png",
-        "32": "images/get_started32.png",
-        "64": "images/get_started64.png",
-        "128": "images/get_started128.png"
-    },
-    "permissions": [
-        "activeTab"
-    ]
-  }
+
+	"name": "Slider Game",
+	"description": "Extension",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+	"service_worker": "background.js"
+	
+	},
+	"permissions": ["storage", "activeTab",  "scripting"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "/images/get_started16.png",
+			"32": "/images/get_started32.png",
+			"48": "/images/get_started48.png",
+			"128": "/images/get_started128.png"
+		  }
+	},
+	"icons": {
+		"16": "/images/get_started16.png",
+		"32": "/images/get_started32.png",
+		"48": "/images/get_started48.png",
+		"128": "/images/get_started128.png"
+	  }
+
+
+}
