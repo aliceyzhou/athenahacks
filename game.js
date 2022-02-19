@@ -13,3 +13,15 @@ function imageSlicer(num_rows, num_cols) {
         }
     }
 }
+
+function 3by3(){
+
+}
+
+function 4by4(){
+
+}
+
+function 5by5(){
+    
+}
