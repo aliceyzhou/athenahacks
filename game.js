@@ -8,7 +8,8 @@ image.src = '';
 function imageSlicer(num_rows, num_cols) {
     for(var rows = 0; rows < num_rows; num_rows++) {
         for(var cols = 0; cols < num_cols; num_cols++) {
-            
+            // hey
+            print("hi");
         }
     }
 }
