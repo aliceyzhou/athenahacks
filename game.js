@@ -20,14 +20,20 @@ document.getElementById("by5Button").addEventListener("click", by5);
 
 function by3(){
     alert("3!!");
+    var cols = 3;
+    var rows = 3;
 }
 
 function by4(){
     alert("4!!");
+    var cols = 4;
+    var rows = 4;
 }
 
 function by5(){
     alert("5!!");
+    var cols = 5;
+    var rows = 5;
 }
 
 function cutImage(rows, cols){
