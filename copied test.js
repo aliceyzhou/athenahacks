@@ -1,3 +1,5 @@
+document.getElementById("test").addEventListener("click", enter());
+
 var noCols = 3;
 var noRows = 3;
 
@@ -8,7 +10,6 @@ var squareSize = 175;
 var board = [];
 var noMoves = 0;
 
-document.getElementById("test").addEventListener("click", enter());
 
 function enter()
 {
