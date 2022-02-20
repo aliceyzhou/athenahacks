@@ -79,7 +79,7 @@ function generateGameBoard(rows, cols){
 }
 
 function drawGameBoard() {
-    for(var i = 0; i < rows*cols; i++) {
+    for(var i = 0; i < 25; i++) {
         console.log(i);
     }
 }
