@@ -4,4 +4,13 @@ body{
     border: 15px solid #FFFFEA;
     padding: 50px;
     margin: 20px;
+
+    text-align: center;
 }
+
+h1{
+    color: #655560;
+    text-align: center;
+    font: Helvetica, sans-serif;
+}
+
