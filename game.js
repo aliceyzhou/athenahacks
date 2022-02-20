@@ -14,14 +14,14 @@ function imageSlicer(num_rows, num_cols) {
     }
 }
 
-function 3by3(){
-
+function by3(){
+    print ("3");
 }
 
-function 4by4(){
-
+function by4(){
+    print ("4");
 }
 
-function 5by5(){
-    
+function by5(){
+    print (5);
 }
