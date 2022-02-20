@@ -22,18 +22,24 @@ function by3(){
     alert("3!!");
     var cols = 3;
     var rows = 3;
+
+    cutImage(rows,cols);
 }
 
 function by4(){
     alert("4!!");
     var cols = 4;
     var rows = 4;
+
+    cutImage(rows,cols);
 }
 
 function by5(){
     alert("5!!");
     var cols = 5;
     var rows = 5;
+
+    cutImage(rows,cols);
 }
 
 function cutImage(rows, cols){
