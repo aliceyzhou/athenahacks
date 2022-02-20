@@ -15,15 +15,17 @@ function imageSlicer(num_rows, num_cols) {
 }
 
 document.getElementById("by3Button").addEventListener("click", by3);
+document.getElementById("by4Button").addEventListener("click", by4);
+document.getElementById("by5Button").addEventListener("click", by5);
 
 function by3(){
     alert("3!!");
 }
-/*
+
 function by4(){
-    console.log("4");
+    alert("4!!");
 }
 
 function by5(){
-    console.log("5");
-}*/
+    alert("5!!");
+}
