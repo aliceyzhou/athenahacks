@@ -14,7 +14,7 @@ h1{
     font: Helvetica, sans-serif;
 }
 
-img{
+.container{
    width: 1000px;
    height: 1000px;
    object-fit: contain; 
