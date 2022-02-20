@@ -18,6 +18,17 @@ function by3(){
     generateGameBoard(rows,cols);
 }
 
+function shuffle3() {
+    for(var rows = 1; rows <= 3; rows++) {
+        for(var cols = 1; cols <= 3; cols++) {
+            var rows2 = Math.floor(Math.random() * 3 + 1);
+            var cols2 = Math.floor(Math.random() * 3 + 1);
+            
+            swapTiles("cell" + rows + cols, "cell" + rows2 + cols2);
+    }
+}
+}
+
 function by4(){
     alert("4!!");
     var cols = 4;
@@ -35,6 +46,8 @@ function by5(){
 
     generateGameBoard(rows,cols);
 }
+
+
 
 function generateGameBoard(rows, cols){
     tiles = [];
