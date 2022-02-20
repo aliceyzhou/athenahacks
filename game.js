@@ -19,6 +19,8 @@ function by3(){
     var rows = 3;
 
     generateGameBoard(rows,cols);
+
+    console.log("3");
 }
 
 
@@ -45,7 +47,6 @@ function by5(){
     var imgWidth = img.width;
     var imgHeight = img.height;
 
-    alert("5!!");
     var cols = 5;
     var rows = 5;
 
@@ -85,7 +86,7 @@ function drawPhotoTile() {
 }
 
 function report() {
-    alert("5!!");
+    alert("6!!");
     let region = document.querySelector("body"); // whole screen
     html2canvas(region, {
       onrendered: function(canvas) {
@@ -93,5 +94,6 @@ function report() {
         let img = document.querySelector(".screen");
         img.src = pngUrl; 
         },
-  });
-  }
+    });
+    
+}
