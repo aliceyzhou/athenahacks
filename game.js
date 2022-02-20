@@ -10,9 +10,8 @@ function by3(){
     const img = new Image();
 
     img.src = imgSrc;
-    img.onload = function() {
-        alert('Image' + img.width + ' ' + img.height);
-    }
+    var imgWidth = img.width;
+    var imgHeight = img.height;
 
     var cols = 3;
     var rows = 3;
@@ -36,9 +35,9 @@ function by4(){
     const img = new Image();
 
     img.src = imgSrc;
-    img.onload = function() {
-        alert('Image' + img.width + ' ' + img.height);
-    }
+    var imgWidth = img.width;
+    var imgHeight = img.height;
+
     //alert("4!!");
     var cols = 4;
     var rows = 4;
@@ -47,6 +46,13 @@ function by4(){
 }
 
 function by5(){
+    const imgSrc = "images/testRainbow.jpg";
+    const img = new Image();
+
+    img.src = imgSrc;
+    var imgWidth = img.width;
+    var imgHeight = img.height;
+
     alert("5!!");
     takeScreenshot();
     var cols = 5;
