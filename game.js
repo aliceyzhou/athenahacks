@@ -8,10 +8,6 @@ document.getElementById("takescreenshot").addEventListener("click", report);
 
 
 function by3(){
-    const imgSrc = "images/testRainbow.jpg";
-    const img = new Image();
-
-    img.src = imgSrc;
     var imgWidth = img.width;
     var imgHeight = img.height;
 
@@ -27,10 +23,6 @@ function by3(){
 
 
 function by4(){
-    const imgSrc = "images/testRainbow.jpg";
-    const img = new Image();
-
-    img.src = imgSrc;
     var imgWidth = img.width;
     var imgHeight = img.height;
 
@@ -42,10 +34,6 @@ function by4(){
 }
 
 function by5(){
-    const imgSrc = "images/testRainbow.jpg";
-    const img = new Image();
-
-    img.src = imgSrc;
     var imgWidth = img.width;
     var imgHeight = img.height;
 
