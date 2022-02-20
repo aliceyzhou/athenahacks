@@ -51,6 +51,7 @@ function by5(){
 
     var cols = 5;
     var rows = 5;
+    generateGameBoard(rows,cols);
 
     drawGameBoard();
 
@@ -74,7 +75,7 @@ function generateGameBoard(rows, cols){
     for (var i = 0; i < (rows*cols); i++){
         tiles.push(i);
     }
-    shuffle() // ????
+    //shuffle() // ????
 }
 
 function drawGameBoard() {
