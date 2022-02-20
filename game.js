@@ -1,17 +1,19 @@
 
 //var imgHeight = image.naturalHeight;
 //var imgWidth = image.naturalWidth;
-
 document.getElementById("by3Button").addEventListener("click", by3);
 document.getElementById("by4Button").addEventListener("click", by4);
 document.getElementById("by5Button").addEventListener("click", by5);
 
 function by3(){
-    var image = new Image();
-    image.onload = function () {
-        alert(this.width +'hi' + this.height);
+    const imgSrc = "images/testRainbow.jpg";
+    const img = new Image();
+
+    img.src = imgSrc;
+    img.onload = function() {
+        alert('Image' + img.width + ' ' + img.height);
     }
-    image.src = 'testRainbow.jpg';
+
     var cols = 3;
     var rows = 3;
 
@@ -19,7 +21,14 @@ function by3(){
 }
 
 function by4(){
-    alert("4!!");
+    const imgSrc = "images/testRainbow.jpg";
+    const img = new Image();
+
+    img.src = imgSrc;
+    img.onload = function() {
+        alert('Image' + img.width + ' ' + img.height);
+    }
+    //alert("4!!");
     var cols = 4;
     var rows = 4;
 
