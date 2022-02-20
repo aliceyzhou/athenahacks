@@ -17,7 +17,7 @@ function imageSlicer(num_rows, num_cols) {
 document.getElementById("by3Button").addEventListener("click", by3);
 
 function by3(){
-    console.log("3");
+    alert("3!!");
 }
 /*
 function by4(){
