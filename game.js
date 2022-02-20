@@ -9,19 +9,19 @@ function imageSlicer(num_rows, num_cols) {
     for(var rows = 0; rows < num_rows; num_rows++) {
         for(var cols = 0; cols < num_cols; num_cols++) {
             // hey
-            print("hi");
+            console.log("hi");
         }
     }
 }
 
 function by3(){
-    print ("3");
+    console.log("3");
 }
 
 function by4(){
-    print ("4");
+    console.log("4");
 }
 
 function by5(){
-    print (5);
+    console.log("5");
 }
