@@ -14,14 +14,16 @@ function imageSlicer(num_rows, num_cols) {
     }
 }
 
+document.getElementById("by3Button").addEventListener("click", by3);
+
 function by3(){
     console.log("3");
 }
-
+/*
 function by4(){
     console.log("4");
 }
 
 function by5(){
     console.log("5");
-}
+}*/
