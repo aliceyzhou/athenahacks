@@ -1,13 +1,17 @@
-var image = new Image();
 
-image.src = '';
+//var imgHeight = image.naturalHeight;
+//var imgWidth = image.naturalWidth;
 
 document.getElementById("by3Button").addEventListener("click", by3);
 document.getElementById("by4Button").addEventListener("click", by4);
 document.getElementById("by5Button").addEventListener("click", by5);
 
 function by3(){
-    alert("3!!");
+    var image = new Image();
+    image.onload = function () {
+        alert(this.width +'hi' + this.height);
+    }
+    image.src = 'testRainbow.jpg';
     var cols = 3;
     var rows = 3;
 
@@ -50,7 +54,7 @@ function drawGameBoard() {
 }
 
 function drawPhotoTile() {
-    
+
 }
 
 function takeScreenshot() {
