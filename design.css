@@ -1,3 +1,7 @@
 body{
     background-color: palevioletred;
+    width: 300px;
+    border: 15px solid gray;
+    padding: 50px;
+    margin: 20px;
 }
