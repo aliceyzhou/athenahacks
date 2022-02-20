@@ -4,11 +4,33 @@
 </head>
 
 <h1>Title</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<div>Screenshot tester</div>
+<button onclick="report()">Take screenshot</button>
 
-<button id = "by3Button"> 3x3 </button>
+<div class="container">
+  <img width="75%" class="screen">
+</div>
+<!-- <button id = "by3Button"> 3x3 </button>
 <button id = "by4Button"> 4x4 </button>
 <button id = "by5Button"> 5x5 </button>
 <script src = "game.js"></script>
-<script src = "background2.js"></script>
+<script src = "background2.js"></script> -->
+
+<script>
+    function report() {
+    let region = document.querySelector("body"); // whole screen
+    html2canvas(region, {
+      onrendered: function(canvas) {
+        let pngUrl = canvas.toDataURL(); // png in dataURL format
+        let img = document.querySelector(".screen");
+        img.src = pngUrl; 
+  
+        // here you can allow user to set bug-region
+        // and send it with 'pngUrl' to server
+        },
+    });
+    }
+</script>
 
 </html>
