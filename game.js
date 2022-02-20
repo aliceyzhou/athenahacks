@@ -15,10 +15,14 @@ function by3(){
     var imgWidth = img.width;
     var imgHeight = img.height;
 
+    alert("sizes" + imgWidth + "" + imgHeight);
+
     var cols = 3;
     var rows = 3;
 
     generateGameBoard(rows,cols);
+
+    console.log("3");
 }
 
 
@@ -45,7 +49,6 @@ function by5(){
     var imgWidth = img.width;
     var imgHeight = img.height;
 
-    alert("5!!");
     var cols = 5;
     var rows = 5;
 
@@ -71,7 +74,7 @@ function generateGameBoard(rows, cols){
     for (var i = 0; i < (rows*cols); i++){
         tiles.push(i);
     }
-    // shuffle tiles function to go here
+    shuffle() // ????
 }
 
 function drawGameBoard() {
@@ -85,7 +88,7 @@ function drawPhotoTile() {
 }
 
 function report() {
-    alert("5!!");
+    alert("6!!");
     let region = document.querySelector("body"); // whole screen
     html2canvas(region, {
       onrendered: function(canvas) {
@@ -93,5 +96,6 @@ function report() {
         let img = document.querySelector(".screen");
         img.src = pngUrl; 
         },
-  });
-  }
+    });
+    
+}
