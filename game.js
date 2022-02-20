@@ -8,11 +8,10 @@ document.getElementById("by5Button").addEventListener("click", by5);
 
 function by3(){
     var image = new Image();
-    image.src = 'testRainbow.jpg';
     image.onload = function () {
         alert(this.width +'hi' + this.height);
     }
-
+    image.src = 'testRainbow.jpg';
     var cols = 3;
     var rows = 3;
 
