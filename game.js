@@ -26,7 +26,7 @@ function by4(){
     var imgWidth = img.width;
     var imgHeight = img.height;
 
-    //alert("4!!");
+    alert("4!!");
     var cols = 4;
     var rows = 4;
 
