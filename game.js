@@ -6,15 +6,17 @@ document.getElementById("by4Button").addEventListener("click", by4);
 document.getElementById("by5Button").addEventListener("click", by5);
 document.getElementById("takescreenshot").addEventListener("click", report);
 
+var cols;
+var rows;
 
 function by3(){
     var imgWidth = img.width;
     var imgHeight = img.height;
 
-    alert("sizes" + imgWidth + "" + imgHeight);
+    alert("sizes" + imgWidth + " " + imgHeight);
 
-    var cols = 3;
-    var rows = 3;
+    cols = 3;
+    rows = 3;
 
     generateGameBoard(rows,cols);
 
@@ -27,8 +29,8 @@ function by4(){
     var imgHeight = img.height;
 
     alert("4!!");
-    var cols = 4;
-    var rows = 4;
+    cols = 4;
+    rows = 4;
 
     generateGameBoard(rows,cols);
 }
@@ -37,8 +39,8 @@ function by5(){
     var imgWidth = img.width;
     var imgHeight = img.height;
 
-    var cols = 5;
-    var rows = 5;
+    cols = 5;
+    rows = 5;
     generateGameBoard(rows,cols);
 
     drawGameBoard();
@@ -92,16 +94,16 @@ function drawPhotoTile() {
 
 }
 
-var img = null;
-function report() {
-    alert("6!!");
-    let region = document.querySelector("body"); // whole screen
-    html2canvas(region, {
-      onrendered: function(canvas) {
-        let pngUrl = canvas.toDataURL(); // png in dataURL format
-        img = document.querySelector(".screen");
-        img.src = pngUrl; 
-        },
-    });
-    
-}
+//screenshot stuff
+// var img = null;
+// function report() {
+//     let region = document.querySelector("body"); // whole screen
+//     html2canvas(region, {
+//       onrendered: function(canvas) {
+//         let pngUrl = canvas.toDataURL(); // png in dataURL format
+//         img = document.querySelector(".screen");
+//         img.src = pngUrl; 
+//         },
+//     });
+// }
+
