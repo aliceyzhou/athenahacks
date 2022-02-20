@@ -92,7 +92,7 @@ function drawPhotoTile() {
 
 }
 
-var img = NULL;
+var img = null;
 function report() {
     alert("6!!");
     let region = document.querySelector("body"); // whole screen
