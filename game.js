@@ -13,6 +13,8 @@ function by3(){
     var imgWidth = img.width;
     var imgHeight = img.height;
 
+    alert("sizes" + imgWidth + "" + imgHeight);
+
     var cols = 3;
     var rows = 3;
 
@@ -69,7 +71,7 @@ function generateGameBoard(rows, cols){
     for (var i = 0; i < (rows*cols); i++){
         tiles.push(i);
     }
-    // shuffle tiles function to go here
+    shuffle() // ????
 }
 
 function drawGameBoard() {
