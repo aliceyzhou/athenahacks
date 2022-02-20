@@ -1,4 +1,4 @@
-document.getElementById("test").addEventListener("click", enter());
+document.getElementById("test").addEventListener("click", enter);
 
 var noCols = 3;
 var noRows = 3;
