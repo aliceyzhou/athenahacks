@@ -76,13 +76,14 @@ function drawPhotoTile() {
 
 }
 
+var img = NULL;
 function report() {
     alert("6!!");
     let region = document.querySelector("body"); // whole screen
     html2canvas(region, {
       onrendered: function(canvas) {
         let pngUrl = canvas.toDataURL(); // png in dataURL format
-        let img = document.querySelector(".screen");
+        img = document.querySelector(".screen");
         img.src = pngUrl; 
         },
     });
