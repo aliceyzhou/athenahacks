@@ -55,24 +55,6 @@ function shuffle() {
         tiles[j] = tiles[i];
         tiles[i] = temp;
     }
-
-
-
-/*  
-for i from n−1 downto 1 do
-  j ← random integer such that 0 ≤ j ≤ i
-      (i.e. use a modulus operation on the random number)
-  exchange a[j] and a[i]
-
-
-for(var rows = 1; rows <= 3; rows++) {
-        for(var cols = 1; cols <= 3; cols++) {
-            var rows2 = Math.floor(Math.random() * 3 + 1);
-            var cols2 = Math.floor(Math.random() * 3 + 1);
-            
-            swapTiles("cell" + rows + cols, "cell" + rows2 + cols2);
-    }
-}*/
 }
 
 function generateGameBoard(rows, cols){
@@ -81,7 +63,7 @@ function generateGameBoard(rows, cols){
     for (var i = 0; i < (rows*cols); i++){
         tiles.push(i);
     }
-    //shuffle() // ????
+    shuffle();
 }
 
 function drawGameBoard() {
