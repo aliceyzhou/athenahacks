@@ -8,6 +8,7 @@ var squareSize = 175;
 var board = [];
 var noMoves = 0;
 
+document.getElementById("test").addEventListener("click", enter());
 
 function enter()
 {
